@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body, html{
+    width: 100% !important;
+    height:100% !important;
+}
+body{
+    background: radial-gradient(rgba(255, 0, 0, 0.244), rgba(0, 0, 255, 0.345));
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    border-radius: 8px;
+    gap:1rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1) ;
+}
+.timer{
+    display: flex;
+    font-size: 3rem;
+    gap:1rem;
+}
+.timer div{
+    width:4rem;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    gap:1rem;
+}
+.btns button{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border:none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor:pointer;
+    transition:300ms ease
+}
+.btns button:active{
+    transform: scale(0.95);
+}
+.active-btn{
+    background:radial-gradient(rgba(255, 0, 0, 0.244), rgba(0, 0, 255, 0.345)) ;
+    color:black;
+    box-shadow:0px 10px 10px rgba(0,0,0,0.1) ;
+}
